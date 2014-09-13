@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5328217F-4FA3-4A19-8750-987563AA3674</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LandingPage-Tutorial</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA7042DDC1C34A9979758414AD2A8D7BA8A8A59C</key>
+		<string>github.com:swiftdetut/26-LandingPage.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LandingPage-Tutorial/LandingPage-Tutorial.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA7042DDC1C34A9979758414AD2A8D7BA8A8A59C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:swiftdetut/26-LandingPage.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA7042DDC1C34A9979758414AD2A8D7BA8A8A59C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA7042DDC1C34A9979758414AD2A8D7BA8A8A59C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>26-LandingPage</string>
+		</dict>
+	</array>
+</dict>
+</plist>

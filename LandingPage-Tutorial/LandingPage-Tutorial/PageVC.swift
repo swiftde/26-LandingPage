@@ -20,7 +20,7 @@ class PageVC: UIViewController, UIPageViewControllerDataSource {
         for i in 1...5 {
             pageImages.append("page\(i).png")
         }
-        pageViewController = storyboard.instantiateViewControllerWithIdentifier("PageViewController") as UIPageViewController
+        pageViewController = storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as UIPageViewController
         pageViewController.dataSource = self
         
         let viewController = [viewControllerAtIndex(0)!]
@@ -31,7 +31,8 @@ class PageVC: UIViewController, UIPageViewControllerDataSource {
         pageViewController.didMoveToParentViewController(self)
     }
     
-    func pageViewController(pageViewController: UIPageViewController!, viewControllerBeforeViewController viewController: UIViewController!) -> UIViewController! {
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         let index = (viewController as ContentVC).pageIndex
         if index == 0 {
             return nil
@@ -39,7 +40,7 @@ class PageVC: UIViewController, UIPageViewControllerDataSource {
         return viewControllerAtIndex(index - 1)
     }
     
-    func pageViewController(pageViewController: UIPageViewController!, viewControllerAfterViewController viewController: UIViewController!) -> UIViewController! {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         let index = (viewController as ContentVC).pageIndex
         if index + 1 == pageImages.count {
             return nil
@@ -60,7 +61,7 @@ class PageVC: UIViewController, UIPageViewControllerDataSource {
             return nil
         }
         
-        let contentVC = storyboard.instantiateViewControllerWithIdentifier("ContentVC") as ContentVC
+        let contentVC = storyboard?.instantiateViewControllerWithIdentifier("ContentVC") as ContentVC
         contentVC.imageString = pageImages[index]
         contentVC.titleString = pageImages[index]
         contentVC.pageIndex = index

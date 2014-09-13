@@ -25,7 +25,7 @@ class ContentVC: UIViewController {
             startButton.hidden = true
         }
         titleLabel.text = titleString!
-        imageView.image = UIImage(named: imageString)
+        imageView.image = UIImage(named: imageString!)
     }
     @IBAction func startButtonPressed(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "skipTutorial")
